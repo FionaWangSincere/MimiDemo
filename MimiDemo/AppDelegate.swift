@@ -17,6 +17,38 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        let vc1 = ViewController()
+        let vc2 = SecondViewController()
+        
+        let nav1 = UINavigationController.init(rootViewController: vc1)
+        let nav2 = UINavigationController.init(rootViewController: vc2)
+        
+//        nav1.navigationItem.title = "First"
+//        nav2.navigationItem.title = "Second"
+
+//
+        nav1.tabBarItem = UITabBarItem(title: "First", image: nil, selectedImage: nil)
+        nav2.tabBarItem = UITabBarItem(title: "Second", image: nil, selectedImage: nil)
+        
+        
+//        let nc = UINavigationController.init(rootViewController: tabbar);
+        
+//        let navs = UINavigationController()
+//        navs.setViewControllers([nav1,nav2], animated: true)
+        
+        
+        let tabbar = UITabBarController()
+        tabbar.viewControllers = [nav1,nav2];
+        tabbar.tabBar.tintColor = UIColor.purple
+        
+
+        
+        self.window?.rootViewController = tabbar ;
+        
+        
+        
+        self.window?.backgroundColor = UIColor.white
         return true
     }
 
