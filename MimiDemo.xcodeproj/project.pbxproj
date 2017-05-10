@@ -1,0 +1,321 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EEDAF6A21EC2E6A5007C7112 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEDAF6A11EC2E6A5007C7112 /* AppDelegate.swift */; };
+		EEDAF6A41EC2E6A5007C7112 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEDAF6A31EC2E6A5007C7112 /* ViewController.swift */; };
+		EEDAF6A71EC2E6A5007C7112 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EEDAF6A51EC2E6A5007C7112 /* Main.storyboard */; };
+		EEDAF6AA1EC2E6A5007C7112 /* MimiDemo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EEDAF6A81EC2E6A5007C7112 /* MimiDemo.xcdatamodeld */; };
+		EEDAF6AC1EC2E6A5007C7112 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EEDAF6AB1EC2E6A5007C7112 /* Assets.xcassets */; };
+		EEDAF6AF1EC2E6A5007C7112 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EEDAF6AD1EC2E6A5007C7112 /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		EEDAF69E1EC2E6A5007C7112 /* MimiDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MimiDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EEDAF6A11EC2E6A5007C7112 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EEDAF6A31EC2E6A5007C7112 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		EEDAF6A61EC2E6A5007C7112 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EEDAF6A91EC2E6A5007C7112 /* MimiDemo.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MimiDemo.xcdatamodel; sourceTree = "<group>"; };
+		EEDAF6AB1EC2E6A5007C7112 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EEDAF6AE1EC2E6A5007C7112 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EEDAF6B01EC2E6A5007C7112 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EEDAF69B1EC2E6A5007C7112 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EEDAF6951EC2E6A5007C7112 = {
+			isa = PBXGroup;
+			children = (
+				EEDAF6A01EC2E6A5007C7112 /* MimiDemo */,
+				EEDAF69F1EC2E6A5007C7112 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EEDAF69F1EC2E6A5007C7112 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EEDAF69E1EC2E6A5007C7112 /* MimiDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EEDAF6A01EC2E6A5007C7112 /* MimiDemo */ = {
+			isa = PBXGroup;
+			children = (
+				EEDAF6A11EC2E6A5007C7112 /* AppDelegate.swift */,
+				EEDAF6A31EC2E6A5007C7112 /* ViewController.swift */,
+				EEDAF6A51EC2E6A5007C7112 /* Main.storyboard */,
+				EEDAF6AB1EC2E6A5007C7112 /* Assets.xcassets */,
+				EEDAF6AD1EC2E6A5007C7112 /* LaunchScreen.storyboard */,
+				EEDAF6B01EC2E6A5007C7112 /* Info.plist */,
+				EEDAF6A81EC2E6A5007C7112 /* MimiDemo.xcdatamodeld */,
+			);
+			path = MimiDemo;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EEDAF69D1EC2E6A5007C7112 /* MimiDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EEDAF6B31EC2E6A5007C7112 /* Build configuration list for PBXNativeTarget "MimiDemo" */;
+			buildPhases = (
+				EEDAF69A1EC2E6A5007C7112 /* Sources */,
+				EEDAF69B1EC2E6A5007C7112 /* Frameworks */,
+				EEDAF69C1EC2E6A5007C7112 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MimiDemo;
+			productName = MimiDemo;
+			productReference = EEDAF69E1EC2E6A5007C7112 /* MimiDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EEDAF6961EC2E6A5007C7112 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0810;
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = kangkang;
+				TargetAttributes = {
+					EEDAF69D1EC2E6A5007C7112 = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = EEDAF6991EC2E6A5007C7112 /* Build configuration list for PBXProject "MimiDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EEDAF6951EC2E6A5007C7112;
+			productRefGroup = EEDAF69F1EC2E6A5007C7112 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EEDAF69D1EC2E6A5007C7112 /* MimiDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EEDAF69C1EC2E6A5007C7112 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EEDAF6AF1EC2E6A5007C7112 /* LaunchScreen.storyboard in Resources */,
+				EEDAF6AC1EC2E6A5007C7112 /* Assets.xcassets in Resources */,
+				EEDAF6A71EC2E6A5007C7112 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EEDAF69A1EC2E6A5007C7112 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EEDAF6AA1EC2E6A5007C7112 /* MimiDemo.xcdatamodeld in Sources */,
+				EEDAF6A41EC2E6A5007C7112 /* ViewController.swift in Sources */,
+				EEDAF6A21EC2E6A5007C7112 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		EEDAF6A51EC2E6A5007C7112 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EEDAF6A61EC2E6A5007C7112 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EEDAF6AD1EC2E6A5007C7112 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EEDAF6AE1EC2E6A5007C7112 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EEDAF6B11EC2E6A5007C7112 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		EEDAF6B21EC2E6A5007C7112 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EEDAF6B41EC2E6A5007C7112 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = MimiDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.shennongshi.dingdong.MimiDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		EEDAF6B51EC2E6A5007C7112 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = MimiDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.shennongshi.dingdong.MimiDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EEDAF6991EC2E6A5007C7112 /* Build configuration list for PBXProject "MimiDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EEDAF6B11EC2E6A5007C7112 /* Debug */,
+				EEDAF6B21EC2E6A5007C7112 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EEDAF6B31EC2E6A5007C7112 /* Build configuration list for PBXNativeTarget "MimiDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EEDAF6B41EC2E6A5007C7112 /* Debug */,
+				EEDAF6B51EC2E6A5007C7112 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		EEDAF6A81EC2E6A5007C7112 /* MimiDemo.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				EEDAF6A91EC2E6A5007C7112 /* MimiDemo.xcdatamodel */,
+			);
+			currentVersion = EEDAF6A91EC2E6A5007C7112 /* MimiDemo.xcdatamodel */;
+			path = MimiDemo.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = EEDAF6961EC2E6A5007C7112 /* Project object */;
+}
