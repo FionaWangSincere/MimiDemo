@@ -20,13 +20,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         let vc1 = ViewController()
         let vc2 = SecondViewController()
+        let vc3 = DetailViewController()
         
         let nav1 = UINavigationController.init(rootViewController: vc1)
         let nav2 = UINavigationController.init(rootViewController: vc2)
+        let nav3 = UINavigationController.init(rootViewController: vc3)
         
         
         nav1.tabBarItem = UITabBarItem(title: "Web", image:nil, selectedImage: nil)
         nav2.tabBarItem = UITabBarItem(title: "Local", image:nil, selectedImage: nil)
+        nav3.tabBarItem = UITabBarItem(title: "Star", image: nil, selectedImage: nil)
         
         
         
@@ -38,7 +41,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         
         let tabbar = UITabBarController()
-        tabbar.viewControllers = [nav1,nav2];
+        tabbar.viewControllers = [nav1,nav2,nav3];
         tabbar.tabBar.tintColor = UIColor.purple
         
 

@@ -53,6 +53,9 @@
 		F21AD2D91EC88D99001C7172 /* ga070205.gif in Resources */ = {isa = PBXBuildFile; fileRef = F21AD2B31EC88D99001C7172 /* ga070205.gif */; };
 		F21AD2DA1EC88D99001C7172 /* ga070206.gif in Resources */ = {isa = PBXBuildFile; fileRef = F21AD2B41EC88D99001C7172 /* ga070206.gif */; };
 		F21AD2DB1EC88D99001C7172 /* ga070207.gif in Resources */ = {isa = PBXBuildFile; fileRef = F21AD2B51EC88D99001C7172 /* ga070207.gif */; };
+		F21AD2DD1EC89B99001C7172 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F21AD2DC1EC89B99001C7172 /* DetailViewController.swift */; };
+		F21AD2E01EC8B549001C7172 /* DetalTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F21AD2DE1EC8B549001C7172 /* DetalTableViewCell.swift */; };
+		F21AD2E11EC8B549001C7172 /* DetalTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F21AD2DF1EC8B549001C7172 /* DetalTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -104,6 +107,9 @@
 		F21AD2B31EC88D99001C7172 /* ga070205.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = ga070205.gif; sourceTree = "<group>"; };
 		F21AD2B41EC88D99001C7172 /* ga070206.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = ga070206.gif; sourceTree = "<group>"; };
 		F21AD2B51EC88D99001C7172 /* ga070207.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = ga070207.gif; sourceTree = "<group>"; };
+		F21AD2DC1EC89B99001C7172 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		F21AD2DE1EC8B549001C7172 /* DetalTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetalTableViewCell.swift; sourceTree = "<group>"; };
+		F21AD2DF1EC8B549001C7172 /* DetalTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetalTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,6 +148,9 @@
 				EEDAF6B61EC2E6D5007C7112 /* SecondViewController.swift */,
 				F21ACC871EC7FDE6001C7172 /* collectionCellCollectionViewCell.swift */,
 				F21ACC881EC7FDE6001C7172 /* collectionCellCollectionViewCell.xib */,
+				F21AD2DC1EC89B99001C7172 /* DetailViewController.swift */,
+				F21AD2DE1EC8B549001C7172 /* DetalTableViewCell.swift */,
+				F21AD2DF1EC8B549001C7172 /* DetalTableViewCell.xib */,
 				EEDAF6A51EC2E6A5007C7112 /* Main.storyboard */,
 				EEDAF6AD1EC2E6A5007C7112 /* LaunchScreen.storyboard */,
 				EEDAF6B01EC2E6A5007C7112 /* Info.plist */,
@@ -272,6 +281,7 @@
 				F21AD2C11EC88D99001C7172 /* ga070112.gif in Resources */,
 				F21AD2CB1EC88D99001C7172 /* ga070122.gif in Resources */,
 				F21AD2CD1EC88D99001C7172 /* ga070124.gif in Resources */,
+				F21AD2E11EC8B549001C7172 /* DetalTableViewCell.xib in Resources */,
 				F21AD2CF1EC88D99001C7172 /* ga070126.gif in Resources */,
 				F21AD2B61EC88D99001C7172 /* ga070101.gif in Resources */,
 				F21AD2D81EC88D99001C7172 /* ga070204.gif in Resources */,
@@ -305,9 +315,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F21AD2E01EC8B549001C7172 /* DetalTableViewCell.swift in Sources */,
 				EEDAF6B71EC2E6D5007C7112 /* SecondViewController.swift in Sources */,
 				F21ACC891EC7FDE6001C7172 /* collectionCellCollectionViewCell.swift in Sources */,
 				EEDAF6AA1EC2E6A5007C7112 /* MimiDemo.xcdatamodeld in Sources */,
+				F21AD2DD1EC89B99001C7172 /* DetailViewController.swift in Sources */,
 				EEDAF6A41EC2E6A5007C7112 /* ViewController.swift in Sources */,
 				EEDAF6A21EC2E6A5007C7112 /* AppDelegate.swift in Sources */,
 			);

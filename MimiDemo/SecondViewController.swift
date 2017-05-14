@@ -19,11 +19,20 @@ class SecondViewController: UIViewController{
     var imageData = [String]()
 
     
-
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.navigationItem.title = "Second"
+        self.navigationItem.title = "2007"
+        
+//        let newViewController = DetailViewController()
+
+//        let rightBar = UIBarButtonItem(title: "Add", style: .plain, target: self, action:#selector(pushViewController))
+        
+//        let newViewController = DetailViewController()
+//        self.navigationController?.pushViewController(newViewController, animated: true)
+//
+//        self.navigationItem.rightBarButtonItem = rightBar
+//        self.hidesBottomBarWhenPushed = true
         
         layout = UICollectionViewFlowLayout()
         layout.sectionInset = UIEdgeInsets(top: 5, left: 10, bottom: 10, right: 10)
@@ -53,6 +62,11 @@ class SecondViewController: UIViewController{
         }
 
 
+    }
+    
+    func pushViewController(){
+        let detailViewController = DetailViewController()
+        self.navigationController?.pushViewController(detailViewController, animated: true)
     }
     
 }
