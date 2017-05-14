@@ -15,6 +15,8 @@ class SecondViewController: UIViewController{
     let collectionNibName = UINib(nibName: "collectionCellCollectionViewCell", bundle: nil)
     
     var layout : UICollectionViewFlowLayout!
+    
+    var imageData = [String]()
 
     
 
@@ -24,7 +26,7 @@ class SecondViewController: UIViewController{
         self.navigationItem.title = "Second"
         
         layout = UICollectionViewFlowLayout()
-        layout.sectionInset = UIEdgeInsets(top: 20, left: 10, bottom: 10, right: 10)
+        layout.sectionInset = UIEdgeInsets(top: 5, left: 10, bottom: 10, right: 10)
         
         self.collectionView = UICollectionView(frame: self.view.bounds, collectionViewLayout: layout)
         self.collectionView.delegate = self
@@ -33,16 +35,26 @@ class SecondViewController: UIViewController{
         self.collectionView.backgroundColor = UIColor.white
         
         
-//        layout.itemSize = CGSize(width: , height: 80)
+        layout.itemSize = CGSize(width: self.view.bounds.width, height: 150)
         self.layout.minimumInteritemSpacing = 2
         self.layout.minimumLineSpacing = 2
         self.layout.scrollDirection = UICollectionViewScrollDirection.vertical
         
         self.view.addSubview(collectionView)
+        
+        let fm = FileManager.default
+        let path = Bundle.main.resourcePath!
+        let items = try! fm.contentsOfDirectory(atPath: path)
+        
+        for item in items {
+            if item.hasPrefix("ga070"){
+                imageData.append(item)
+            }
+        }
 
 
     }
- 
+    
 }
 
 extension SecondViewController: UICollectionViewDelegate,UICollectionViewDataSource{
@@ -52,13 +64,14 @@ extension SecondViewController: UICollectionViewDelegate,UICollectionViewDataSou
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 10
+        return imageData.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellIdentifier, for: indexPath) as! collectionCellCollectionViewCell
 
-        cell.imageView.backgroundColor = UIColor.blue
+//        cell.imageView.backgroundColor = UIColor.blue
+        cell.imageView.image = UIImage(named: imageData[indexPath.row])
         return cell
     }
     

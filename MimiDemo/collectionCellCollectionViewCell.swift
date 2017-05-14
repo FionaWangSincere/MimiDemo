@@ -13,7 +13,7 @@ class collectionCellCollectionViewCell: UICollectionViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
-        imageView.backgroundColor = UIColor.red
+//        imageView.backgroundColor = UIColor.red
     }
 
     @IBOutlet weak var imageView: UIImageView!
