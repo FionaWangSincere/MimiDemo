@@ -8,30 +8,58 @@
 
 import UIKit
 
-class SecondViewController: UIViewController {
+class SecondViewController: UIViewController{
+    
+    var collectionView : UICollectionView!
+    let cellIdentifier = "collectionCellCollectionViewCell"
+    let collectionNibName = UINib(nibName: "collectionCellCollectionViewCell", bundle: nil)
+    
+    var layout : UICollectionViewFlowLayout!
+
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loadng the view.
+        
         self.navigationItem.title = "Second"
-        self.view.backgroundColor = UIColor.blue
-    }
+        
+        layout = UICollectionViewFlowLayout()
+        layout.sectionInset = UIEdgeInsets(top: 20, left: 10, bottom: 10, right: 10)
+        
+        self.collectionView = UICollectionView(frame: self.view.bounds, collectionViewLayout: layout)
+        self.collectionView.delegate = self
+        self.collectionView.dataSource = self
+        self.collectionView.register(collectionNibName, forCellWithReuseIdentifier: cellIdentifier)
+        self.collectionView.backgroundColor = UIColor.white
+        
+        
+//        layout.itemSize = CGSize(width: , height: 80)
+        self.layout.minimumInteritemSpacing = 2
+        self.layout.minimumLineSpacing = 2
+        self.layout.scrollDirection = UICollectionViewScrollDirection.vertical
+        
+        self.view.addSubview(collectionView)
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+
+    }
+ 
+}
+
+extension SecondViewController: UICollectionViewDelegate,UICollectionViewDataSource{
+    
+    func numberOfSections(in collectionView: UICollectionView) -> Int {
+        return 1
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return 10
     }
-    */
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellIdentifier, for: indexPath) as! collectionCellCollectionViewCell
 
+        cell.imageView.backgroundColor = UIColor.blue
+        return cell
+    }
+    
 }

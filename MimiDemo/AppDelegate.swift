@@ -24,12 +24,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let nav1 = UINavigationController.init(rootViewController: vc1)
         let nav2 = UINavigationController.init(rootViewController: vc2)
         
-//        nav1.navigationItem.title = "First"
-//        nav2.navigationItem.title = "Second"
-
-//
-        nav1.tabBarItem = UITabBarItem(title: "First", image: nil, selectedImage: nil)
-        nav2.tabBarItem = UITabBarItem(title: "Second", image: nil, selectedImage: nil)
+        
+        nav1.tabBarItem = UITabBarItem(title: "Web", image:nil, selectedImage: nil)
+        nav2.tabBarItem = UITabBarItem(title: "Local", image:nil, selectedImage: nil)
+        
+        
         
         
 //        let nc = UINavigationController.init(rootViewController: tabbar);

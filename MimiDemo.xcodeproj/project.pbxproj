@@ -11,9 +11,10 @@
 		EEDAF6A41EC2E6A5007C7112 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEDAF6A31EC2E6A5007C7112 /* ViewController.swift */; };
 		EEDAF6A71EC2E6A5007C7112 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EEDAF6A51EC2E6A5007C7112 /* Main.storyboard */; };
 		EEDAF6AA1EC2E6A5007C7112 /* MimiDemo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EEDAF6A81EC2E6A5007C7112 /* MimiDemo.xcdatamodeld */; };
-		EEDAF6AC1EC2E6A5007C7112 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EEDAF6AB1EC2E6A5007C7112 /* Assets.xcassets */; };
 		EEDAF6AF1EC2E6A5007C7112 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EEDAF6AD1EC2E6A5007C7112 /* LaunchScreen.storyboard */; };
 		EEDAF6B71EC2E6D5007C7112 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEDAF6B61EC2E6D5007C7112 /* SecondViewController.swift */; };
+		F21ACC891EC7FDE6001C7172 /* collectionCellCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F21ACC871EC7FDE6001C7172 /* collectionCellCollectionViewCell.swift */; };
+		F21ACC8A1EC7FDE6001C7172 /* collectionCellCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F21ACC881EC7FDE6001C7172 /* collectionCellCollectionViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,10 +23,11 @@
 		EEDAF6A31EC2E6A5007C7112 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		EEDAF6A61EC2E6A5007C7112 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EEDAF6A91EC2E6A5007C7112 /* MimiDemo.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MimiDemo.xcdatamodel; sourceTree = "<group>"; };
-		EEDAF6AB1EC2E6A5007C7112 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EEDAF6AE1EC2E6A5007C7112 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EEDAF6B01EC2E6A5007C7112 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EEDAF6B61EC2E6D5007C7112 /* SecondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		F21ACC871EC7FDE6001C7172 /* collectionCellCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = collectionCellCollectionViewCell.swift; sourceTree = "<group>"; };
+		F21ACC881EC7FDE6001C7172 /* collectionCellCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = collectionCellCollectionViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,8 +63,9 @@
 				EEDAF6A11EC2E6A5007C7112 /* AppDelegate.swift */,
 				EEDAF6A31EC2E6A5007C7112 /* ViewController.swift */,
 				EEDAF6B61EC2E6D5007C7112 /* SecondViewController.swift */,
+				F21ACC871EC7FDE6001C7172 /* collectionCellCollectionViewCell.swift */,
+				F21ACC881EC7FDE6001C7172 /* collectionCellCollectionViewCell.xib */,
 				EEDAF6A51EC2E6A5007C7112 /* Main.storyboard */,
-				EEDAF6AB1EC2E6A5007C7112 /* Assets.xcassets */,
 				EEDAF6AD1EC2E6A5007C7112 /* LaunchScreen.storyboard */,
 				EEDAF6B01EC2E6A5007C7112 /* Info.plist */,
 				EEDAF6A81EC2E6A5007C7112 /* MimiDemo.xcdatamodeld */,
@@ -130,8 +133,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				EEDAF6AF1EC2E6A5007C7112 /* LaunchScreen.storyboard in Resources */,
-				EEDAF6AC1EC2E6A5007C7112 /* Assets.xcassets in Resources */,
 				EEDAF6A71EC2E6A5007C7112 /* Main.storyboard in Resources */,
+				F21ACC8A1EC7FDE6001C7172 /* collectionCellCollectionViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -143,6 +146,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EEDAF6B71EC2E6D5007C7112 /* SecondViewController.swift in Sources */,
+				F21ACC891EC7FDE6001C7172 /* collectionCellCollectionViewCell.swift in Sources */,
 				EEDAF6AA1EC2E6A5007C7112 /* MimiDemo.xcdatamodeld in Sources */,
 				EEDAF6A41EC2E6A5007C7112 /* ViewController.swift in Sources */,
 				EEDAF6A21EC2E6A5007C7112 /* AppDelegate.swift in Sources */,
@@ -305,6 +309,7 @@
 				EEDAF6B51EC2E6A5007C7112 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
