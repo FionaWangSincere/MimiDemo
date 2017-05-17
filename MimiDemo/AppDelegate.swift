@@ -41,7 +41,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         
         let tabbar = UITabBarController()
-        tabbar.viewControllers = [nav1,nav2,nav3];
+        tabbar.viewControllers = [nav1,nav2];
         tabbar.tabBar.tintColor = UIColor.purple
         
 
