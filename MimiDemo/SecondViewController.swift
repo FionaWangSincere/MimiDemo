@@ -17,6 +17,7 @@ class SecondViewController: UIViewController{
     var layout : UICollectionViewFlowLayout!
     
     var imageData = [String]()
+    var selected = [String]()
 
     
     override func viewDidLoad() {
@@ -69,6 +70,13 @@ class SecondViewController: UIViewController{
         self.navigationController?.pushViewController(detailViewController, animated: true)
     }
     
+//    func selectedThecell(cell: UITableViewCell, with indexpath: NSIndexPath){
+//       let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellIdentifier, for:indexpath as IndexPath) as! collectionCellCollectionViewCell
+//        
+//        
+//    }
+    
+    
 }
 
 extension SecondViewController: UICollectionViewDelegate,UICollectionViewDataSource{
@@ -87,6 +95,17 @@ extension SecondViewController: UICollectionViewDelegate,UICollectionViewDataSou
 //        cell.imageView.backgroundColor = UIColor.blue
         cell.imageView.image = UIImage(named: imageData[indexPath.row])
         return cell
+    }
+    
+
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        if collectionView.cellForItem(at: indexPath) != nil{
+            let row = indexPath.row
+            print("#### sender the cell id \(row)")
+            
+        }
+        collectionView.deselectItem(at: indexPath, animated: true)
+        
     }
     
 }

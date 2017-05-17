@@ -24,12 +24,12 @@ class collectionCellCollectionViewCell: UICollectionViewCell {
 
     @IBOutlet weak var imageView: UIImageView!
 
-    @IBAction func starButton(_ sender: UIButton) {
-        self.star.backgroundColor = UIColor.purple
-//        self.star.titleLabel?.text = "❤︎"
-//        self.star.titleLabel?.textColor = UIColor.white
-        self.star.layer.cornerRadius = self.star.layer.borderWidth/2
-    }
+//    @IBAction func starButton(_ sender: UIButton) {
+//        self.star.backgroundColor = UIColor.purple
+////        self.star.titleLabel?.text = "❤︎"
+////        self.star.titleLabel?.textColor = UIColor.white
+//        self.star.layer.cornerRadius = self.star.layer.borderWidth/2
+//    }
 
 
 

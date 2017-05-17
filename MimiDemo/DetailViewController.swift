@@ -61,4 +61,6 @@ extension DetailViewController:UITableViewDelegate, UITableViewDataSource{
         cell.cellImage.backgroundColor = UIColor.yellow
         return cell
     }
+    
+    
 }
