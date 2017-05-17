@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SQLite
 
 class SecondViewController: UIViewController{
     
@@ -18,6 +19,10 @@ class SecondViewController: UIViewController{
     
     var imageData = [String]()
     var selected = [String]()
+    var db : Connection! = nil
+    let users = Table("users")
+    let id = Expression<Int64>("id")
+    let name = Expression<String>("name")
 
     
     override func viewDidLoad() {
@@ -61,7 +66,19 @@ class SecondViewController: UIViewController{
                 imageData.append(item)
             }
         }
-
+        
+        //sqlite
+        
+        do {
+            db = try Connection(NSHomeDirectory()+"/Documents/db.sqlite3")
+            try db.run(users.create{
+                t in
+                t.column(id, primaryKey: true)
+                t.column(name)
+            })
+        }catch{
+            print("NO DB")
+        }
 
     }
     
@@ -99,9 +116,19 @@ extension SecondViewController: UICollectionViewDelegate,UICollectionViewDataSou
     
 
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        if collectionView.cellForItem(at: indexPath) != nil{
+        if let cell = collectionView.cellForItem(at: indexPath){
+            let string = cell.description
             let row = indexPath.row
             print("#### sender the cell id \(row)")
+            do {
+                for user in try db.prepare(users){
+                    print("id = \(user[id]), name = \(user[name])")
+                    print("cell description = \(string)")
+                }
+                
+            }catch{
+                print("do not selete row")
+            }
             
         }
         collectionView.deselectItem(at: indexPath, animated: true)
