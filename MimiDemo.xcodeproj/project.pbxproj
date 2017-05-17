@@ -56,9 +56,13 @@
 		F21AD2DD1EC89B99001C7172 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F21AD2DC1EC89B99001C7172 /* DetailViewController.swift */; };
 		F21AD2E01EC8B549001C7172 /* DetalTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F21AD2DE1EC8B549001C7172 /* DetalTableViewCell.swift */; };
 		F21AD2E11EC8B549001C7172 /* DetalTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F21AD2DF1EC8B549001C7172 /* DetalTableViewCell.xib */; };
+		F60733428A29263571915BB1 /* Pods_MimiDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8AEF83D828356EB6B9B25F33 /* Pods_MimiDemo.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		762E057FFACCCAAF4A1AE5FC /* Pods-MimiDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MimiDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-MimiDemo/Pods-MimiDemo.release.xcconfig"; sourceTree = "<group>"; };
+		8AEF83D828356EB6B9B25F33 /* Pods_MimiDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MimiDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DBF742B3A7C428AEDE7C7261 /* Pods-MimiDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MimiDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MimiDemo/Pods-MimiDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		EEDAF69E1EC2E6A5007C7112 /* MimiDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MimiDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EEDAF6A11EC2E6A5007C7112 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EEDAF6A31EC2E6A5007C7112 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -117,17 +121,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F60733428A29263571915BB1 /* Pods_MimiDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2F8F3E2D19FF7F57AD192586 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8AEF83D828356EB6B9B25F33 /* Pods_MimiDemo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D5BAD53566D9940E7056CFF7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DBF742B3A7C428AEDE7C7261 /* Pods-MimiDemo.debug.xcconfig */,
+				762E057FFACCCAAF4A1AE5FC /* Pods-MimiDemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		EEDAF6951EC2E6A5007C7112 = {
 			isa = PBXGroup;
 			children = (
 				EEDAF6A01EC2E6A5007C7112 /* MimiDemo */,
 				EEDAF69F1EC2E6A5007C7112 /* Products */,
+				D5BAD53566D9940E7056CFF7 /* Pods */,
+				2F8F3E2D19FF7F57AD192586 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -211,9 +235,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EEDAF6B31EC2E6A5007C7112 /* Build configuration list for PBXNativeTarget "MimiDemo" */;
 			buildPhases = (
+				1DFD2EA80DDF24A766AF0B33 /* [CP] Check Pods Manifest.lock */,
 				EEDAF69A1EC2E6A5007C7112 /* Sources */,
 				EEDAF69B1EC2E6A5007C7112 /* Frameworks */,
 				EEDAF69C1EC2E6A5007C7112 /* Resources */,
+				378F7FA13CC5DEBBAB867A96 /* [CP] Embed Pods Frameworks */,
+				732647B7B3A6E2D09EB94BC2 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -309,6 +336,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1DFD2EA80DDF24A766AF0B33 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		378F7FA13CC5DEBBAB867A96 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MimiDemo/Pods-MimiDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		732647B7B3A6E2D09EB94BC2 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MimiDemo/Pods-MimiDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		EEDAF69A1EC2E6A5007C7112 /* Sources */ = {
@@ -440,6 +515,7 @@
 		};
 		EEDAF6B41EC2E6A5007C7112 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DBF742B3A7C428AEDE7C7261 /* Pods-MimiDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = MimiDemo/Info.plist;
@@ -452,6 +528,7 @@
 		};
 		EEDAF6B51EC2E6A5007C7112 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 762E057FFACCCAAF4A1AE5FC /* Pods-MimiDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = MimiDemo/Info.plist;
